@@ -1,6 +1,6 @@
 from scripts.extract import DataExtractor
 from scripts.transform import DataTransformer
-from scripts.load import DataLoader  # Certifique-se de que este import existe!
+from scripts.load import DataLoader  
 from scripts.utils import setup_logging
 from dotenv import load_dotenv
 
