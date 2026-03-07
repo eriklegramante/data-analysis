@@ -12,7 +12,7 @@ user = os.getenv("POSTGRES_USER")
 password = os.getenv("POSTGRES_PASSWORD")
 host = "127.0.0.1"
 db_name = "student_wellbeing_db"
-engine = create_engine(f"postgresql+psycopg2://{user}:{password}@{host}:5432/{db_name}")
+engine = create_engine("sqlite:///student_wellbeing.db")
 
 st.title("🚀 Student Productivity & Wellbeing Dashboard")
 st.markdown("Dados integrados de **Tempo de Tela**, **Performance Acadêmica** e **Clima**.")
