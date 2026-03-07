@@ -19,9 +19,9 @@ class DataExtractor:
             print(f"Error reading CSV file {filename}: {e}")
             return None
         
-    def fetch_weather(self, city="São Paulo"):
-        url = "http://api.weatherapi.com/v1/current.json" 
-        params = {"key": self.api_key, "q": city}
+    def fetch_weather(self):
+        url =  "https://api.openweathermap.org/data/2.5/weather"
+        params = {"q": "New York", "appid": self.api_key, "units": "metric"}
         try:
             response = requests.get(url, params=params) 
             response.raise_for_status()
