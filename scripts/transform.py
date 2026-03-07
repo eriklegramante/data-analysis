@@ -5,7 +5,6 @@ class DataTransformer:
         pass
 
     def clean_column_names(self, df: pd.DataFrame) -> pd.DataFrame:
-        """Padroniza nomes de colunas para snake_case."""
         df.columns = (
             df.columns.str.strip()
             .str.lower()
@@ -16,7 +15,6 @@ class DataTransformer:
         return df
 
     def process_weather(self, weather_json):
-        """Converte o JSON da API em um DataFrame de uma linha."""
         if not weather_json or 'current' not in weather_json:
             return None
         
