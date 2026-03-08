@@ -5,3 +5,8 @@
 header {
     visibility: hidden;
 }
+
+base="dark"
+primaryColor="#082e8e"
+backgroundColor="#000000"
+secondaryBackgroundColor="#020d2b"
